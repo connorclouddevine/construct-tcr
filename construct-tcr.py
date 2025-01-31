@@ -85,7 +85,7 @@ master_dict = file_loader(libraries_path)
 
 # # DEFINE FUNCTIONS
 
-
+# Debugging sequences if you're interested
 def get_seqs():
 
     #CDR3;
@@ -116,6 +116,7 @@ def get_seqs():
 
     return(cdr.upper(), trv.upper(), trc.upper())
 
+# Very important
 def get_aligner():
     aligner = Align.PairwiseAligner()
 
@@ -135,7 +136,7 @@ def get_aligner():
     return(aligner)
 
 
-# PANDAS-based consenesusizer (numpy was not faster)
+# PANDAS-based consensusizer (numpy was not faster)
 # x needs to be a dataframe with one the column on the left containing consensus counts and the column on the right containing sequences
 # note that consensus counts and operations performed on them are not useful for the current build and need to be cleaned out
 # method is 'minimum' or 'padded'
