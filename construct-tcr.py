@@ -199,7 +199,7 @@ def consensusizer(x, method = 'padded', confidence = 0.8):
     
     return(consensus_string)
 
-# aligns every v_gene against the consensus sequence to decide which is best
+# Aligns every v_gene against the consensus sequence to decide which is best
 # Not useful under current build, future plan is to have it be the default method when v_call is empty
     # Another fix that needs to be made: Modify alignment formatting in dictionary ouput so it is readable with unispace font (make it not a dictionary)
 def v_gene_finder_concise(sequence):
@@ -388,6 +388,7 @@ def v_call_consolidation(df_out, airr_filt):
 
 # Performs construction. Works hard to figure out what v-gene nucleotides to use
 # Most notable function inside is aligner_constructor_pairwise()
+# Should be reformatted into get_v_gene_nuc() and construction() functions
 def construction_wrapper(df_out):
     
     pass_fail = 'FAIL'
