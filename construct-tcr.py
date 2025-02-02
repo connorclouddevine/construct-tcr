@@ -77,7 +77,7 @@ if args.libraries_path:
     libraries_path = args.libraries_path
 else:
     # Default to the 'data' directory next to the script
-    libraries_path = os.path.join(get_script_dir(), "v_genes")
+    libraries_path = os.path.join(get_script_dir(), "IMGT_genes")
 
 # Load the gene libraries into master_dict
 master_dict = file_loader(libraries_path)

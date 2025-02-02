@@ -1,6 +1,9 @@
 # Mac DS
 .DS_Store
 
+# jupyter for testing changes
+*.ipynb
+
 # History files
 .Rhistory
 .Rapp.history
